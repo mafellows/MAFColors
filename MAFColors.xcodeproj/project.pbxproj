@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		22DAA4FAB0114D62BEDBF1C5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 082C2C03326F4FB285B36DD1 /* Foundation.framework */; };
 		50CAACCEF9CF4833AA941875 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA616F1629FD4E5C8D44ED2F /* XCTest.framework */; };
+		8FAC279A1921368100E52C29 /* UIColor+MAFColors.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FAC27991921368100E52C29 /* UIColor+MAFColors.m */; };
+		8FAC27A3192141B300E52C29 /* MAFColorStore.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FAC27A2192141B300E52C29 /* MAFColorStore.m */; };
+		8FAC27A6192141D800E52C29 /* MAFColorTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FAC27A5192141D800E52C29 /* MAFColorTableViewController.m */; };
 		B04A8699BE344994B9CC7EB7 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CDE9EA6F6E5B41B0AE8A0799 /* CoreGraphics.framework */; };
 		DC9D1E832B0148F2A808DBBE /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E144F50E8074D3DA31E909B /* UIKit.framework */; };
 		E0572FABB9654BE5A68E6E00 /* MAFAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E1FEBBF968AD455788CD99F7 /* MAFAppDelegate.m */; };
@@ -32,6 +35,12 @@
 		5A48354D445E43669CD77B5B /* UnitTests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "UnitTests-Info.plist"; sourceTree = "<group>"; };
 		5C34893DBBB54204B00F16D4 /* MAFColors.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MAFColors.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7E144F50E8074D3DA31E909B /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.0.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		8FAC27981921368100E52C29 /* UIColor+MAFColors.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+MAFColors.h"; sourceTree = "<group>"; };
+		8FAC27991921368100E52C29 /* UIColor+MAFColors.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+MAFColors.m"; sourceTree = "<group>"; };
+		8FAC27A1192141B300E52C29 /* MAFColorStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MAFColorStore.h; sourceTree = "<group>"; };
+		8FAC27A2192141B300E52C29 /* MAFColorStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MAFColorStore.m; sourceTree = "<group>"; };
+		8FAC27A4192141D800E52C29 /* MAFColorTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MAFColorTableViewController.h; path = ../../../MAFColorTableViewController.h; sourceTree = "<group>"; };
+		8FAC27A5192141D800E52C29 /* MAFColorTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MAFColorTableViewController.m; path = ../../../MAFColorTableViewController.m; sourceTree = "<group>"; };
 		96DA76F8229F483DBBAB9120 /* UnitTests-Prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UnitTests-Prefix.pch"; sourceTree = "<group>"; };
 		AC93AF808C2546DEABCB445F /* main.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		B64F2465C38746AD84102531 /* MAFAppDelegate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = MAFAppDelegate.h; sourceTree = "<group>"; };
@@ -68,6 +77,8 @@
 		1E4AE28BB37044BFAEBB3E6E /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				8FAC27A1192141B300E52C29 /* MAFColorStore.h */,
+				8FAC27A2192141B300E52C29 /* MAFColorStore.m */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -113,6 +124,8 @@
 		39ACE62FD8A14844ABB75927 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				8FAC27A4192141D800E52C29 /* MAFColorTableViewController.h */,
+				8FAC27A5192141D800E52C29 /* MAFColorTableViewController.m */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -175,6 +188,8 @@
 		A2D8FDF71C9547CE8853DC17 /* Categories */ = {
 			isa = PBXGroup;
 			children = (
+				8FAC27981921368100E52C29 /* UIColor+MAFColors.h */,
+				8FAC27991921368100E52C29 /* UIColor+MAFColors.m */,
 			);
 			path = Categories;
 			sourceTree = "<group>";
@@ -364,6 +379,9 @@
 			files = (
 				E0572FABB9654BE5A68E6E00 /* MAFAppDelegate.m in Sources */,
 				F6294ADE99474A29A595CCF0 /* main.m in Sources */,
+				8FAC27A6192141D800E52C29 /* MAFColorTableViewController.m in Sources */,
+				8FAC27A3192141B300E52C29 /* MAFColorStore.m in Sources */,
+				8FAC279A1921368100E52C29 /* UIColor+MAFColors.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
