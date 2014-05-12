@@ -1,0 +1,4 @@
+#import "MAFColors-Prefix.pch"
+
+#ifdef __OBJC__
+#endif
